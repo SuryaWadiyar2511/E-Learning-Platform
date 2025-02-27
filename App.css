@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-image: ('https://images.unsplash.com/photo-1551829142-d9b8cf2c9232?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1551829142-d9b8cf2c9232?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 75, 43, 0.6);
+}
+
+/* Course Cards */
+.course-card {
+  background: linear-gradient(145deg, #b5b5e5, #acacb0);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px #efeff2, -5px -5px 15px #ebebef;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px #ccccd0, -10px -10px 20px #f0f0f3;
+}
+
+/* Video Container */
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(233, 211, 211, 0.874);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f9f9fb, #d5d5df);
+  border-radius: 10px;
+  box-shadow: 0 -5px 15px rgba(223, 219, 219, 0.911);
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #ff416c;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #ff4b2b;
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .course-card {
+    padding: 15px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
