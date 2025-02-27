@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #e69dd2, #ded2db, #dabcce, #ffdde1);
+  background-size: 300% 300%;
+  
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures full coverage */
+  z-index: -1; /* Puts video behind content */
+}
+
+/* Content on top of the video */
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+}
+
+/* Background Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.content-box {
+  background: rgba(243, 239, 239, 0.927);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(229, 234, 236, 0.878);
+  color: #fff;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn {
+  background: #e1c3d5;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #ff4757;
+  transform: scale(1.05);
+}
