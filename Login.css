@@ -1,0 +1,90 @@
+/* Full-Screen Background */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(206, 193, 193, 0.99);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.login-container h2 {
+    color: #f0dddd;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #4ca1af;
+}
+
+/* Error Message */
+.login-container .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Login Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #4ca1af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-container button:hover {
+    background: #3a8b9e;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+}
+}
